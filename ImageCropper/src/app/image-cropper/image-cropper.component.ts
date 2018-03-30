@@ -69,7 +69,7 @@ export class ImageCropperComponent implements OnInit {
   
 
   gameLoop(): void {
-    requestAnimationFrame(this.gameLoop);
+    requestAnimationFrame(this.gameLoop.bind(this);
     this.keyInput.inputLoop();
 
     this.ctx.fillStyle = "black";
@@ -105,7 +105,7 @@ export class ImageCropperComponent implements OnInit {
   }
 
   imgUp(): void {
-    this.y -= 2;
+    this.img.y -= 2;
   }
 
   imgDown(): void {
